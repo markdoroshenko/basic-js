@@ -12,6 +12,6 @@ describe('MAC address', () => {
     assert.strictEqual(isMAC48Address('Z1-1B-63-84-45-E6'), false);
     assert.strictEqual(isMAC48Address('not a MAC-48 address'), false);
     assert.strictEqual(isMAC48Address('FF-FF-FF-FF-FF-FF'), true);
-    assert.strictEqual(isMAC48Address('G0-00-00-00-00-00'), false);
+    assert.strictEqual(isMAC48Address('0G0-0-00-00-00-00'), false);
   });
 });
