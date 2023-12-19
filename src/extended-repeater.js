@@ -35,12 +35,9 @@ function repeater( str, options ) {
     for ( let i = 0; i < repeatTimes; i++ ) {
         debugger
         if ( i === repeatTimes - 1 ) {
-            res += addition ? `${ strIn }${ addition }` : strIn;
+            res += `${ strIn }${ addition }`;
         } else {
-            const val = addition ? `${ strIn }${ addition }${ separator }` : `${ strIn }${ separator }`;
-            console.log( '`${ strIn }${ separator }`', `${ strIn }${ separator }` );
-            console.log( 'val', val );
-            res += val;
+            res += `${ strIn }${ addition }${ separator }`;
         }
     }
     return res;
